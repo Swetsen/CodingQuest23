@@ -1,32 +1,32 @@
 """Coding Game: Challange 1"""
 
 
-f = open("data", 'r')
+f = open("Challenge 1/data", 'r', encoding="utf-8")
 f = f.read()
 
-dict = {}
+dictionary = {}
 
 f = f.split("\n")
 
 for i in f:
-    a = i.split(" ")
+    A = i.split(" ")
 
     try:
-        dict[a[2]] += int(a[1])
+        dictionary[A[2]] += int(A[1])
     except KeyError:
-        dict[a[2]] = 0
-        dict[a[2]] += int(a[1])
+        dictionary[A[2]] = 0
+        dictionary[A[2]] += int(A[1])
 
-amounts = list(dict.values())
-a = 0
+amounts = list(dictionary.values())
+A = 0
 for i in amounts:
-    amounts[a] = i % 100
-    a += 1
+    amounts[A] = i % 100
+    A += 1
 
-finished = 0
+FINISHED = 0
 for i in amounts:
-    if finished == 0:
-        finished = i
+    if FINISHED == 0:
+        FINISHED = i
     else:
-        finished *= i
-print(finished)
+        FINISHED *= i
+print(FINISHED)

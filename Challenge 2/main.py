@@ -1,8 +1,9 @@
 """Coding Game: Challange 2"""
 
 
-def get_navigation_value_from_file(filename):
-    with open(filename) as file:
+def get_navigation_value_from_file(_filename):
+    """PYLINT, STOP COMPLAINING"""
+    with open(_filename, 'r', encoding="utf-8") as file:
         value_data = list(map(int, file.read().strip().split()))
 
     # Filter out values that don't adhere to even parity
@@ -18,6 +19,6 @@ def get_navigation_value_from_file(filename):
     return average_value
 
 
-filename = "data.txt"
-result = get_navigation_value_from_file(filename)
+FILENAME = "Challenge 2/data"
+result = get_navigation_value_from_file(FILENAME)
 print(result)
