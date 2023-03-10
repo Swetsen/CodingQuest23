@@ -1,3 +1,6 @@
+"""Coding Game: Challange 2"""
+
+
 def get_navigation_value_from_file(filename):
     with open(filename) as file:
         value_data = list(map(int, file.read().strip().split()))

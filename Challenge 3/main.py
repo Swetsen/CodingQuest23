@@ -1,3 +1,6 @@
+"""Coding Game: Challange 3"""
+
+
 def check_winner(moves):
     rows = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     cols = [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
@@ -35,5 +38,7 @@ with open('data', 'r') as f:
 x_wins = games.count('X')
 o_wins = games.count('O')
 draws = games.count('draw')
-
+print(x_wins)
+print(o_wins)
+print(draws)
 print(x_wins * o_wins * draws)

@@ -1,3 +1,6 @@
+"""Coding Game: Challange 1"""
+
+
 f = open("data", 'r')
 f = f.read()
 

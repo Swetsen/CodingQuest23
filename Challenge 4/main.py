@@ -1,3 +1,6 @@
+"""Coding Game: Challange 4"""
+
+
 def decode_packet(packet):
     header = int(packet[:4], 16)
     if header != 0x5555:
